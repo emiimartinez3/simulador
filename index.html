@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <title>Simulador</title>
 </head>
 <body>
-    <h1>Bienvenido!!!</h1>
-    
-    <script src="./main.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./img/logo.jpg">
+            </div>
+            <ul class="nav-links">
+                <li class="ctn"><a href="#">Kwik E</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#"><i class='bx bxs-shopping-bag-alt carrito' id="verCarrito"></i><span id="cantidadCarrito" class="cantidad-carrito"></span> </a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+
+
+    <section class="shop-content" id="shopContent">
+
+    <div id="modalContainer" class="modal-container"></div>
+
+    </section>
+  <script src="./js/productos.js"></script>
+  <script src="./js/main.js"></script> 
+  <script src="./js/carrito.js"></script>
 </body>
 </html>

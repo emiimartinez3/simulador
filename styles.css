@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: .5s ease;
+}
+
+
+
+body, html{
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.navbar{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 25px;
+    background-color: rgb(85, 180, 42);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 12px;
+    padding: 5px 20px;
+    font-size: 28px;
+    font-weight: 500;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+.nav-links li:hover{
+    background-color: hsl(0, 0%, 100%) ;
+}
+
+.nav-links li a{
+    margin: 0 10px;
+    padding: 5px 0;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+/*.nav-links li a:hover{
+    background-color: hsl(35, 29%, 71%) ;
+    color: white;
+    border-radius: 20px;
+}*/
+
+.logo{
+    height: 150px;
+    width: 150px;
+}
+
+.logo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.shop-content{
+    margin-top: 200px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 2500px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card > img {
+    width: 250px;
+    height: 300px;
+}
+
+.price{
+    font-size: 25px;
+}
+
+.card button{
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: whitesmoke;
+    background-color: rgb(85, 180, 42);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: .4s ease;
+}
+
+.card button:hover{
+    opacity: .7;
+}
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 90vh;
+    color: whitesmoke;
+    background-color:  rgb(85, 180, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    border-radius: 10px;
+}
+
+.modal-header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(37, 111, 35);
+    color: whitesmoke;
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-button{
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    width: 20px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.eliminar-product{
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    background-color: rgb(169, 19, 19);
+    color: whitesmoke;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 5px;
+    top: 67px;
+    right: 60px;
+    position: absolute;
+    display: none;
+}
